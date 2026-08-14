@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">GLOBAL HELPER & SYSTEM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="navbar">
+    <div class="logo" data-i18n="nav_logo">GLOBAL HELPER & SYSTEM</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav_home">HOME</a></li>
+        <li><a href="#services" data-i18n="nav_services">サービス概要</a></li>
+        <li><a href="#languages" data-i18n="nav_languages">対応言語</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <!-- 言語切り替えボタン -->
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="switchLanguage('ja')">日本語</button>
+      <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+      <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 data-i18n="hero_title">言葉とITの架け橋として、<br>あなたの「困った」を柔軟にサポート。</h1>
+        <p data-i18n="hero_desc">日・英・中の3言語対応。観光・行政サポートからシステム開発のご相談まで、柔軟になんでも対応いたします。</p>
+        <div class="badges">
+          <span class="badge" data-i18n="badge_ja">日本語 (Native)</span>
+          <span class="badge" data-i18n="badge_en">English (Fluent)</span>
+          <span class="badge" data-i18n="badge_zh">中文 (Fluent)</span>
+          <span class="badge badge-pro" data-i18n="badge_dev">システム開発 / IT支援 PRO</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- ご指定の写真を挿入 -->
+        <img src="profile.png" alt="プロフィール写真" id="profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴カード -->
+  <section class="features-section">
+    <div class="grid-3">
+      <div class="card">
+        <i class="fa-solid fa-earth-americas card-icon"></i>
+        <h3 data-i18n="feat_1_title">トリリンガル対応</h3>
+        <p data-i18n="feat_1_desc">日本語・英語・中国語の3言語を駆使し、観光案内から複雑な行政手続き、ビジネスコミュニケーションまでスムーズに通訳・サポートします。</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-laptop-code card-icon"></i>
+        <h3 data-i18n="feat_2_title">日本での開発実績</h3>
+        <p data-i18n="feat_2_desc">国内でのシステム開発経験を基盤に、ITアドバイスやプロジェクトの進行サポート（PM補助・進行管理）など幅広く対応可能です。</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-hands-holding-child card-icon"></i>
+        <h3 data-i18n="feat_3_title">柔軟な何でもサポート</h3>
+        <p data-i18n="feat_3_desc">枠にとらわれず、個別の生活サポートからビジネスの軽微な業務まで、ご要望に合わせて柔軟に対応いたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス概要 -->
+  <section id="services" class="services-section">
+    <h2 class="section-title" data-i18n="services_title">提供サービス概要</h2>
+    <div class="grid-2">
+      
+      <div class="service-box">
+        <h3><i class="fa-solid fa-comments"></i> <span data-i18n="serv_1_title">言語・生活・観光アテンド</span></h3>
+        <ul>
+          <li data-i18n="serv_1_li1">日本滞在時の観光サポート、ガイド・アテンド</li>
+          <li data-i18n="serv_1_li2">役所や行政機関での手続き・書類作成サポート</li>
+          <li data-i18n="serv_1_li3">日常会話・ビジネスでの3言語（日・英・中）通翻訳</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3><i class="fa-solid fa-gears"></i> <span data-i18n="serv_2_title">システム開発・ITサポート</span></h3>
+        <ul>
+          <li data-i18n="serv_2_li1">システム開発に関するご相談・技術的サポート</li>
+          <li data-i18n="serv_2_li2">プロジェクトの現場進行管理・コミュニケーション円滑化</li>
+          <li data-i18n="serv_2_li3">Web活用や業務効率化の提案</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3><i class="fa-solid fa-clipboard-list"></i> <span data-i18n="serv_3_title">各種代行・事務ヘルプ</span></h3>
+        <ul>
+          <li data-i18n="serv_3_li1">外国語でのメール・メッセージ作成、返信代行</li>
+          <li data-i18n="serv_3_li2">各種リサーチ、データ入力、簡易通翻訳</li>
+          <li data-i18n="serv_3_li3">その他「どこに頼めばいいか分からない」お困り事の相談</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <h3><i class="fa-regular fa-lightbulb"></i> <span data-i18n="serv_4_title">ご相談姿勢について</span></h3>
+        <ul>
+          <li data-i18n="serv_4_li1">基本的になんでも柔軟にお受けします</li>
+          <li data-i18n="serv_4_li2">個人のご依頼からビジネスのスポット案件まで歓迎</li>
+          <li data-i18n="serv_4_li3">まずはお気軽にご相談・お見積もりください</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title" data-i18n="contact_title">お問い合わせ（Contact）</h2>
+    <p class="contact-intro" data-i18n="contact_intro">
+      ご相談・お見積もりのご依頼は、下記メールアドレスへ直接ご連絡ください。<br>
+      （※Webフォームからの直接送信機能はございません。お手数ですが、以下のテンプレートをコピー＆ペーストしてご利用ください。）
+    </p>
+
+    <div class="email-box">
+      <span data-i18n="email_label">連絡先メールアドレス：</span>
+      <a href="mailto:your-email-address@example.com">your-email-address@example.com</a>
+    </div>
+
+    <div class="template-container">
+      <h3 data-i18n="template_title"><i class="fa-solid fa-paste"></i> コピペして使える問い合わせテンプレート</h3>
+      <pre id="template-text"></pre>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; Portfolio & Personal Service Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

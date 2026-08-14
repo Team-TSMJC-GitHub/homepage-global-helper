@@ -1,0 +1,293 @@
+:root {
+  --primary-color: #1b4d3e;
+  --secondary-color: #2c6e49;
+  --bg-color: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --badge-bg: #e2ece9;
+  --accent-yellow: #f4c430;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ナビゲーションバー */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* ヒーローセクション */
+.hero-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background-color: var(--badge-bg);
+  color: var(--primary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.badge-pro {
+  background-color: var(--accent-yellow);
+  color: #000;
+}
+
+.hero-image {
+  flex: 0 0 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* グリッドレイアウト & カード */
+.features-section, .services-section, .contact-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* サービス概要 */
+.section-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.service-box {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--secondary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-box ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.service-box li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.service-box li::before {
+  content: "•";
+  color: var(--secondary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* お問い合わせ */
+.contact-section {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-intro {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.email-box {
+  text-align: center;
+  background-color: var(--badge-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.email-box a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.template-container {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.template-container h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.85rem;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}

@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "Portfolio"
+  },
+  "profile": {
+    "name": "Takashi G",
+    "role": "Project Manager/System Engineer",
+    "bio": "Hello! I develop and design web applications."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Write your detailed background, skills, and project philosophies here."
+  }
+}
