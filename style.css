@@ -20,16 +20,14 @@ body {
   background-color: #fff;
 }
 
-/* --- ヘッダー (Safari / スマホ崩れ対策) --- */
+/* --- ヘッダー --- */
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* スマホで溢れた場合に安全に折り返す */
-  gap: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,23 +35,30 @@ body {
 }
 
 .logo {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   gap: 1.2rem;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
-  white-space: nowrap; /* テキストの縦書き化・不自然な改行を防止 */
+  white-space: nowrap;
   transition: opacity 0.2s;
 }
 
@@ -61,28 +66,26 @@ body {
   opacity: 0.8;
 }
 
-/* 言語切替ボタン */
-.lang-switch {
-  display: flex;
-  gap: 0.3rem;
-}
-
-.lang-btn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+/* プルダウン形式の言語切り替え */
+.lang-switch #lang-select {
+  background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
-  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.3rem 0.6rem;
   border-radius: 4px;
+  font-size: 0.85rem;
   cursor: pointer;
-  font-size: 0.8rem;
-  white-space: nowrap;
+  outline: none;
+  transition: background-color 0.2s;
 }
 
-.lang-btn.active {
+.lang-switch #lang-select:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.lang-switch #lang-select option {
   background-color: #fff;
-  color: var(--primary-color);
-  font-weight: bold;
-  border-color: #fff;
+  color: var(--text-dark);
 }
 
 /* --- ヒーローセクション --- */
@@ -160,10 +163,9 @@ section {
   font-size: 1.6rem;
   color: var(--primary-color);
   margin-bottom: 2rem;
-  position: relative;
 }
 
-/* --- 特徴カード & サービスグリッド --- */
+/* --- カード & サービス --- */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -209,7 +211,7 @@ section {
   margin-bottom: 0.4rem;
 }
 
-/* --- お問い合わせ & テンプレート --- */
+/* --- お問い合わせ --- */
 .contact-section {
   background-color: var(--bg-light);
   border-radius: 8px;
@@ -252,12 +254,11 @@ section {
   padding: 1rem;
   border-radius: 4px;
   font-size: 0.85rem;
-  white-space: pre-wrap; /* 改行をそのまま保持 */
+  white-space: pre-wrap;
   font-family: inherit;
   color: #333;
 }
 
-/* フッター */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -266,18 +267,17 @@ footer {
   font-size: 0.8rem;
 }
 
-/* --- レスポンシブ (スマホ表示時) --- */
+/* --- レスポンシブ --- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    gap: 0.8rem;
   }
-  
-  .nav-links {
+
+  .header-right {
     width: 100%;
     justify-content: space-between;
-    font-size: 0.8rem;
   }
 
   .hero-container {

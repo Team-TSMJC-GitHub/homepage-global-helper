@@ -1,10 +1,9 @@
 {
-  "site_title": "GLOBAL HELPER & SYSTEM",
-  "nav_logo": "GLOBAL HELPER & SYSTEM",
+  "site_title": "GLOBAL HELPER & SYSTEM (編集中)",
+  "nav_logo": "GLOBAL HELPER & SYSTEM (編集中)",
   "nav_home": "HOME",
   "nav_services": "サービス概要",
-  "nav_languages": "対応言語",
-  "nav_contact": "お問い合わせ",
+  "nav_contact": "Contact",
   "hero_title": "言葉とITの架け橋として、<br>あなたの「困った」を柔軟にサポート。",
   "hero_desc": "日・英・中の3言語対応。観光・行政サポートからシステム開発のご相談まで、柔軟になんでも対応いたします。",
   "badge_ja": "日本語 (Native)",
@@ -34,7 +33,7 @@
   "serv_4_li1": "基本的になんでも柔軟にお受けします",
   "serv_4_li2": "個人のご依頼からビジネスのスポット案件まで歓迎",
   "serv_4_li3": "まずはお気軽にご相談・お見積もりください",
-  "contact_title": "お問い合わせ（Contact）",
+  "contact_title": "Contact",
   "contact_intro": "ご相談・お見積もりのご依頼は、下記メールアドレスへ直接ご連絡ください。<br>（※Webフォームからの直接送信機能はございません。お手数ですが、以下のテンプレートをコピー＆ペーストしてご利用ください。）",
   "email_label": "連絡先メールアドレス：",
   "template_title": "コピペして使える問い合わせテンプレート"

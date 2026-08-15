@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="site_title">(編集中)GLOBAL HELPER & SYSTEM</title>
+  <title data-i18n="site_title">GLOBAL HELPER & SYSTEM (編集中)</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,20 +11,25 @@
 
   <!-- ヘッダー -->
   <header class="navbar">
-    <div class="logo" data-i18n="nav_logo">(編集中)GLOBAL HELPER & SYSTEM</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home" data-i18n="nav_home">HOME</a></li>
-        <li><a href="#services" data-i18n="nav_services">サービス概要</a></li>
-        <li><a href="#languages" data-i18n="nav_languages">対応言語</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">お問い合わせ</a></li>
-      </ul>
-    </nav>
-    <!-- 言語切り替えボタン -->
-    <div class="lang-switch">
-      <button class="lang-btn active" onclick="switchLanguage('ja')">日本語</button>
-      <button class="lang-btn" onclick="switchLanguage('en')">English</button>
-      <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+    <div class="logo" data-i18n="nav_logo">GLOBAL HELPER & SYSTEM (編集中)</div>
+    
+    <div class="header-right">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" data-i18n="nav_home">HOME</a></li>
+          <li><a href="#services" data-i18n="nav_services">サービス概要</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- コンパクトな言語切り替えプルダウン -->
+      <div class="lang-switch">
+        <select id="lang-select" onchange="switchLanguage(this.value)">
+          <option value="ja">日本語</option>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
     </div>
   </header>
 
@@ -42,7 +47,6 @@
         </div>
       </div>
       <div class="hero-image">
-        <!-- ご指定の写真を挿入 -->
         <img src="profile.png" alt="プロフィール写真" id="profile-img">
       </div>
     </div>
@@ -115,7 +119,7 @@
 
   <!-- お問い合わせ -->
   <section id="contact" class="contact-section">
-    <h2 class="section-title" data-i18n="contact_title">お問い合わせ（Contact）</h2>
+    <h2 class="section-title" data-i18n="contact_title">Contact</h2>
     <p class="contact-intro" data-i18n="contact_intro">
       ご相談・お見積もりのご依頼は、下記メールアドレスへ直接ご連絡ください。<br>
       （※Webフォームからの直接送信機能はございません。お手数ですが、以下のテンプレートをコピー＆ペーストしてご利用ください。）
