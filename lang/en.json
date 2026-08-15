@@ -1,14 +1,41 @@
 {
-  "header": {
-    "title": "Portfolio"
-  },
-  "profile": {
-    "name": "Takashi G",
-    "role": "Project Manager/System Engineer",
-    "bio": "Hello! I develop and design web applications."
-  },
-  "about": {
-    "title": "About Me",
-    "description": "Write your detailed background, skills, and project philosophies here."
-  }
+  "site_title": "GLOBAL HELPER & SYSTEM",
+  "nav_logo": "GLOBAL HELPER & SYSTEM",
+  "nav_home": "HOME",
+  "nav_services": "Services",
+  "nav_languages": "Languages",
+  "nav_contact": "Contact",
+  "hero_title": "Bridging Language & IT,<br>Providing Flexible Support for Your Needs.",
+  "hero_desc": "Supporting Japanese, English, and Chinese. From tourism/administrative support to system development consultation, we adapt to your needs.",
+  "badge_ja": "Japanese (Native)",
+  "badge_en": "English (Fluent)",
+  "badge_zh": "Chinese (Fluent)",
+  "badge_dev": "System Dev / IT Support PRO",
+  "feat_1_title": "Trilingual Support",
+  "feat_1_desc": "Leveraging Japanese, English, and Chinese to support you seamlessly from sightseeing to administrative procedures and business communication.",
+  "feat_2_title": "Dev Experience in Japan",
+  "feat_2_desc": "Based on system development experience in Japan, offering IT advice, project management assistance, and technical coordination.",
+  "feat_3_title": "Flexible All-Round Helper",
+  "feat_3_desc": "Without rigid boundaries, we offer assistance tailored to your needs, from daily life support to minor business tasks.",
+  "services_title": "Services Overview",
+  "serv_1_title": "Language & Tourism Support",
+  "serv_1_li1": "Sightseeing support and guiding in Japan",
+  "serv_1_li2": "Assistance with administrative and office procedures",
+  "serv_1_li3": "Trilingual interpretation & translation (JP / EN / ZH)",
+  "serv_2_title": "System Dev & IT Support",
+  "serv_2_li1": "Consultation and technical support for system dev",
+  "serv_2_li2": "On-site project management & communication flow",
+  "serv_2_li3": "Web utilization & business process improvement",
+  "serv_3_title": "Administrative & Desk Work",
+  "serv_3_li1": "Drafting and replying to emails in foreign languages",
+  "serv_3_li2": "Research, data entry, and light translation",
+  "serv_3_li3": "Consultation for miscellaneous or unclear tasks",
+  "serv_4_title": "Our Support Approach",
+  "serv_4_li1": "Flexible approach to almost any request",
+  "serv_4_li2": "Welcome individual requests and spot business projects",
+  "serv_4_li3": "Feel free to contact us for a quote or advice",
+  "contact_title": "Contact Us",
+  "contact_intro": "For consultations and quotes, please email us directly.<br>(*No web form available. Please copy and paste the template below.)",
+  "email_label": "Email Address:",
+  "template_title": "Inquiry Template (Copy & Paste)"
 }
